@@ -19,6 +19,8 @@ note = 'the coins prices are saved in sql database for simplicity which is not r
 
  --------------------------------------------------------------------
 <h1>The Transaction API is written both Class Based and Functional:</h1>
+The Document file is available in: 
+<h3>'abab_tether.postman_collection.json'</h3>
 
 
 Also There is a swagger document in :
