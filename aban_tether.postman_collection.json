@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "0207b770-8ae8-4bbc-995b-eea87f4acbad",
+		"name": "aban_tether",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14042709",
+		"_collection_link": "https://amirkilid.postman.co/workspace/a~924bd984-c942-4217-b357-0ceeb20e7acf/collection/14042709-0207b770-8ae8-4bbc-995b-eea87f4acbad?source=collection_link"
+	},
+	"item": [
+		{
+			"name": "do_transaction_functional",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amir@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"coin_name\": \"bitcoin\",\n\"amount\":0.1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/crypto/api/v1/do_transaction/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"crypto",
+						"api",
+						"v1",
+						"do_transaction",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transaction_list",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amir@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/crypto/api/v1/transactions/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"crypto",
+						"api",
+						"v1",
+						"transactions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transaction_class_based",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amir@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"coin_name\": \"bitcoin\",\n  \"amount\": 1.2\n  }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/crypto/api/v1/transactions/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"crypto",
+						"api",
+						"v1",
+						"transactions",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
