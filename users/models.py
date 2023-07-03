@@ -40,7 +40,7 @@ class TomanWallet(models.Model):
     balance = models.FloatField(default=100)
 
     def __str__(self):
-        return self.user.full_name
+        return self.user.email
 
 
 
